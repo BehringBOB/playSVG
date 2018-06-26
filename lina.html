@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>LINA</title>
+
+
+
+	<?xml version="1.0" encoding="utf-8"?>
+  
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+
+<div id="wrapper">
+	<div id="innerwrapper">
+
+<svg id="lina" x="0px" y="0px" width="600" height="600" viewbox="0 0 1000 1000" style="overflow:inherit;background-color:rgba(255,255,255,0.0);text-align:center;">
+
+<svg id="linawrapper"  width="1000" height="1000" viewbox="0 0 1000 1000" y="260" x="-28" style="overflow: visible;">
+	
+	<g id="heart">
+			
+		<line x="100" y="132" id="line_r" class="letter" stroke-miterlimit="60" x1="525.651" y1="657.518" x2="781.096" y2="402.073"/>
+		<line id="line_l" class="letter" stroke-miterlimit="60" x1="270.207" y1="402.073" x2="525.651" y2="657.518"/>
+		
+		<path  id="round_l" class="letter" fill="none" stroke-miterlimit="10" d="M525.651-78.352l-37.776-37.776
+			c-95.11-95.112-249.319-95.112-344.433,0C103.403-76.089,80.224-25.577,73.895,26.59"/>
+			
+		<path  id="round_r" class="letter" fill="none" stroke-miterlimit="10" d="M977.408,26.59c-6.328-52.167-29.509-102.678-69.547-142.717
+			c-95.114-95.112-249.324-95.112-344.434,0l-37.776,37.775"/>
+	</g>
+
+	
+	<g id="svgroup" stroke="10">
+		<path  id="lina_l" class="letter" fill="none" stroke-miterlimit="10" d="M38.007,342.265v-45.166h38.247l0.125-178.932H38.132V73.001
+			h146.837v45.166h-39.016l-0.125,178.932h78.992l0.125-84.564h52.085l-0.125,129.73H38.007z"/>
+			
+		<path  id="lina_i" class="letter" fill="none" stroke-miterlimit="10" d="M294.975,342.265v-45.166h40.553l0.125-178.932H295.1V73.001
+			h151.065v45.166h-40.938l-0.125,178.932h40.938v45.166H294.975z"/>
+			
+		<path  id="lina_n" class="letter" fill="none" stroke-miterlimit="10" d="M464.875,342.265v-45.166h35.748l0.125-178.932H465V73.001h112.294
+			l98.35,166.706v-121.54h-34.784V73.001h119.93v45.166H723.31v224.098h-59.581L548.412,144.113l-0.125,152.985h33.635v45.166
+			H464.875z"/>
+			
+		<path  id="lina_a" class="letter" fill="none" stroke-miterlimit="10" d="M1018.308,297.099v45.166H886.847v-45.166h34.211l-12.561-47.855
+			h-69.381l-14.351,47.855h35.748v45.166H742.125v-45.166h33.059l52.209-178.932h-35.557V73.001H966.35v45.166H930.41
+			l55.996,178.932H1018.308z M897.542,210.037l-22.293-80.53l-24.025,80.53H897.542z"/>
+	</g>
+</svg>
+
+
+</svg>
+
+
+
+
+
+</div>
+
+</div>
+
+<script>
+var groupsvg_height = Math.round(document.getElementById('svgroup').getBBox().height);
+var groupsvg_width = Math.round(document.getElementById('svgroup').getBBox().width);
+
+//document.getElementById('lina').setAttribute('height',groupsvg_height);
+//document.getElementById('lina').setAttribute('width',groupsvg_width);
+
+console.log(groupsvg_width+' x '+groupsvg_height);
+
+</script>
+
+
+<style>
+html {   overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;}
+html, body
+		{
+		height:100%;
+		width:100%;
+		margin:0;
+		padding:0;
+		background: #9823b2;
+background: #9823b2;
+background: -moz-linear-gradient(45deg,  #9823b2 0%, #c8175d 100%);
+background: -webkit-linear-gradient(45deg,  #9823b2 0%,#c8175d 100%);
+background: linear-gradient(45deg,  #9823b2 0%,#c8175d 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9823b2', endColorstr='#c8175d',GradientType=1 );
+
+	}
+
+#wrapper
+	{
+	display:table;
+	height:100%;
+	width:100%;
+	}
+#innerwrapper
+	{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	}
+
+#lina
+	{
+	text-align:center;
+	}
+	
+.letter {
+stroke: white;
+  stroke-dasharray: 1910;
+  stroke-dashoffset: 0;
+  stroke-width:3px;
+  stroke-linecap: round;
+}
+
+
+#lina_l {  animation: ani 6s linear forwards;	}
+#lina_i {  animation: ani 8s linear backwards;	}
+#lina_n {  animation: ani 4s linear forwards;	}
+#lina_a {  animation: ani 6s linear forwards;	}
+
+#line_r {  animation: ani 20s linear forwards;	}
+#line_l {  animation: ani 20s linear backwards;	}
+#round_r {  animation: ani 14s linear forwards;	}
+#round_l {  animation: ani 14s linear backwards; }
+
+
+@keyframes ani {
+from
+	{  stroke-dashoffset: 2000;}
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+</style>
+<script>
+
+var styleSheetElement = document.createElement("style"), customStyleSheet;
+document.head.appendChild(styleSheetElement);
+customStyleSheet = document.styleSheets[0];
+
+customStyleSheet.insertRule("@keyframes ani { from {stroke-dashoffset: 2000; } to {stroke-dashoffset: 0;}}");
+
+var path_L = document.getElementById('lina_l');
+var path_I = document.getElementById('lina_i');
+var path_N = document.getElementById('lina_n');
+var path_A = document.getElementById('lina_a');
+
+var length_L = (Math.round(path_L.getTotalLength()) + 1);
+var length_I = (Math.round(path_I.getTotalLength()) + 1);
+var length_N = (Math.round(path_N.getTotalLength()) + 1);
+var length_A = (Math.round(path_A.getTotalLength()) + 1);
+
+var line_r = document.getElementById('line_r');
+var line_l = document.getElementById('line_l');
+var round_r = document.getElementById('round_r');
+var round_l = document.getElementById('round_l');
+
+var length_line_r = (Math.round(line_r.getTotalLength()) + 1);
+var length_line_l = (Math.round(line_l.getTotalLength()) + 1);
+var length_round_r = (Math.round(round_l.getTotalLength()) + 1);
+var length_round_l = (Math.round(round_r.getTotalLength()) + 1);
+
+
+path_L.setAttribute('stroke-dashoffset', length_L);
+path_L.setAttribute('dasharray', length_L);
+
+
+console.log('L: '+length_L);
+console.log('I: '+length_I);
+console.log('N: '+length_N);
+console.log('A: '+length_A);
+
+console.log('line_r: '+length_line_r);
+console.log('line_l: '+length_line_l);
+console.log('round_r: '+length_round_r);
+console.log('round_l: '+length_round_l);
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
